@@ -1,0 +1,68 @@
+/*classe*/
+body {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 100px;
+
+}
+
+.nav-bar {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+}
+
+.nav-bar ul>li {
+    padding: 0 10px;
+}
+
+.nav-bar ul>li a {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-bar ul>li a:hover {
+    border-bottom: 2px solid rgb(185, 5, 5);
+    color: rgb(207, 5, 5);
+}
+
+.nav-bar ul>li a.active {
+    color: rgb(207, 5, 5);
+    border-bottom: 2px solid rgb(185, 5, 5);
+
+}
+
+.banner {
+    text-align: center;
+    font-size: 26px;
+    background-color: brown;
+    padding: 10px;
+}
+
+.banner span {
+    color: rgb(4, 4, 163);
+}
