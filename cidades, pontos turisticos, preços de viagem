@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidades Turísticas da Paraíba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #005a8d;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        section {
+            margin: 20px;
+        }
+        h2 {
+            color: #005a8d;
+        }
+        .cidade {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .cidade img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px 0 0 8px;
+        }
+        .cidade .info {
+            padding: 15px;
+            flex: 1;
+        }
+        .cidade .info h3 {
+            margin-top: 0;
+        }
+        .detalhes {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9f7fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .detalhes h4 {
+            color: #005a8d;
+        }
+    </style>
+    <script>
+        function mostrarDetalhes(cidade) {
+            var detalhes = document.querySelectorAll('.detalhes');
+            detalhes.forEach(function(detalhe) {
+                detalhe.style.display = 'none';
+            });
+            var detalheCidade = document.getElementById('detalhes-' + cidade);
+            if (detalheCidade) {
+                detalheCidade.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Cidades Turísticas da Paraíba</h1>
+    <p>Descubra o charme e a história das cidades paraibanas</p>
+</header>
+
+<section>
+    <div class="cidade" onclick="mostrarDetalhes('joao-pessoa')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Jo%C3%A3o_Pessoa_-_Vista_a%C3%A9rea.jpg" alt="João Pessoa">
+        <div class="info">
+            <h3>João Pessoa</h3>
+            <p>Capital da Paraíba, conhecida por suas praias tranquilas e rica história colonial.</p>
+        </div>
+    </div>
+
+    <div class="cidade" onclick="mostrarDetalhes('campina-grande')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Campina_Grande_-_Vista_a%C3%A9rea.jpg" alt="Campina Grande">
+        <div class="info">
+            <h3>Campina Grande</h3>
+            <p>Famosa por seu São João e clima ameno, é um polo cultural e econômico do interior.</p>
+        </div>
+    </div>
+
+    <div class="cidade" onclick="mostrarDetalhes('areia')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Areia_-_Vista_a%C3%A9rea.jpg" alt="Areia">
+        <div class="info">
+            <h3>Areia</h3>
+            <p>Cidade histórica com arquitetura colonial preservada e rica tradição cultural.</p>
+        </div>
+    </div>
+
+    <div class="cidade" onclick="mostrarDetalhes('cabedelo')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Cabedelo_-_Vista_a%C3%A9rea.jpg" alt="Cabedelo">
+        <div class="info">
+            <h3>Cabedelo</h3>
+            <p>Conhecida por suas praias e pela Fortaleza de Santa Catarina, importante ponto turístico.</p>
+        </div>
+    </div>
+</section>
+
+<div id="detalhes-joao-pessoa" class="detalhes">
+    <h4>História:</h4>
+    <p>Fundada em 1585, é uma das cidades mais antigas do Brasil, conhecida como a "Porta do Sol", sendo o ponto mais oriental das Américas.</p>
+    <h4>Pontos Turísticos:</h4>
+    <ul>
+        <li>Praia de Tambaú</li>
+        <li>Mercado de Artesanato</li>
+        <li>Centro Histórico</li>
+        <li>Farol do Cabo Branco</li>
+        <li>Estádio Almeidão</li>
+    </ul>
+    <h4>Preço Estimado de Viagem:</h4>
+    <p>Passagens aéreas a partir de R$ 300 (ida e volta). Hospedagem média de R$ 150 por noite.</p>
+</div>
+
+<div id="detalhes-campina-grande" class="detalhes">
+    <h4>História:</h4>
+    <p>Conhecida como a "Liverpool brasileira", devido à sua importância na exportação de algodão no início do século XX. A cidade é famosa por sediar o Maior São João do Mundo.</p>
+    <h4>Pontos Turísticos:</h4>
+    <ul>
+        <li>Parque do Povo</li>
+        <li>Museu Vivo da Ciência e Tecnologia</li>
+        <li>Açude Velho</li>
+        <li>Mercado Central</li>
+    </ul>
+    <h4>Preço Estimado de Viagem:</h4>
+    <p>Passagens aéreas a partir de R$ 250 (ida e volta). Hospedagem média de R$ 120 por noite.</p>
+</div>
+
+<div id="detalhes-areia" class="detalhes">
+    <h4>História:</h4>
+    <p>Fundada em 1748, Areia é um município com rica herança colonial e arquitetura preservada. Foi palco de importantes eventos históricos e é conhecida por sua produção de cachaça artesanal.</p>
+    <h4>Pontos Turísticos:</h4>
