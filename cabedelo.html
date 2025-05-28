@@ -40,10 +40,25 @@
     </ul>
   </nav>
   <h1> Cidade de Cabedelo</h1>
-  <img
+  <img class="moldura"
     src="https://blog.123milhas.com/wp-content/uploads/2023/02/turismo-em-cabedelo-areia-vermelha-em-cabedelo-conexao123.jpg"
     alt="Cidade de Areia" width="500" heigth="600" />
   <p style="text-align: justify;">
+         <form>
+  <div>
+    <input type="radio" id="somente ida" name="trip" value="somente ida" checked>
+    <label for="somente ida">Somente Ida</label>
+    <input type="radio" id="ida e volta" name="trip" value="ida e volta">
+    <label for="roundtrip">Ida e Volta</label>
+  </div>
+  <div>
+    <label for="saida">Ida</label>
+    <input type="text" id="saida" name="ida" placeholder="__/__/__">
+    <label for="volta">Volta</label>
+    <input type="text" id="volta" name="volta" placeholder="__/__/__">
+  </div>
+  <button type="submit">Buscar</button>
+</form>
     <b>A cidade de Cabedelo</b> está localizada na região metropolitana de João Pessoa. Por isso, para chegar lá, a
     melhor opção é pegar um voo até a capital paraibana e seguir de lá de carro ou de ônibus intermunicipal.
 

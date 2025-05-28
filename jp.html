@@ -40,8 +40,23 @@
         </ul>
     </nav>
     <h1> João Pessoa</h1>
-    <img src="https://bhecoturismo.com.br/wp-content/uploads/2025/03/Capa-Joao-Pessoa.jpg" alt="Cidade de Areia"
+    <img class="moldura" src="https://bhecoturismo.com.br/wp-content/uploads/2025/03/Capa-Joao-Pessoa.jpg"  alt="Cidade de Areia"
         width="500" heigth="600" />
+        <form>
+  <div>
+    <input type="radio" id="somente ida" name="trip" value="somente ida" checked>
+    <label for="somente ida">Somente Ida</label>
+    <input type="radio" id="ida e volta" name="trip" value="ida e volta">
+    <label for="roundtrip">Ida e Volta</label>
+  </div>
+  <div>
+    <label for="saida">Ida</label>
+    <input type="text" id="saida" name="ida" placeholder="__/__/__">
+    <label for="volta">Volta</label>
+    <input type="text" id="volta" name="volta" placeholder="__/__/__">
+  </div>
+  <button type="submit">Buscar</button>
+</form>
     <p style="text-align: justify;">
         <b>A cidade de João Pessoa</b> é um município brasileiro, capital do estado da Paraíba. Com população de mais de
         830 mil habitantes no censo de 2022, a capital paraibana é o município mais populoso de seu estado, o sétimo da

@@ -40,9 +40,24 @@
     </ul>
   </nav>
   <h1> Campina Grande</h1>
-  <img
+  <img class="moldura"
     src="https://mauriliojunior.com/wp-content/uploads/2025/03/abertura-sao-joao-campina-grande-e1743460559168-800x491.jpg"
-    alt="Cidade de Areia" width="500" heigth="600" />
+    alt="Cidade de Areia" width="500" heigth="600" />        <form>
+  <div>
+    <input type="radio" id="somente ida" name="trip" value="somente ida" checked>
+    <label for="somente ida">Somente Ida</label>
+    <input type="radio" id="ida e volta" name="trip" value="ida e volta">
+    <label for="roundtrip">Ida e Volta</label>
+  </div>
+  <div>
+    <label for="saida">Ida</label>
+    <input type="text" id="saida" name="ida" placeholder="__/__/__">
+    <label for="volta">Volta</label>
+    <input type="text" id="volta" name="volta" placeholder="__/__/__">
+  </div>
+  <button type="submit">Buscar</button>
+</form>
+
   <p style="text-align: justify;"> A edição 2025 do São João de Campina Grande já tem data confirmada. O evento será
     realizado entre os dias 30 de maio e 6 de julho, no Parque do Povo, e contará com 38 dias de programação, cinco a
     mais que no ano anterior.
